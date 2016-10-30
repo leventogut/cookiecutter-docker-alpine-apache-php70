@@ -1,0 +1,16 @@
+version: '2'
+networks:
+  default:
+    external:
+      name: development
+services:
+  {{cookiecutter.repo_name}}:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "$PORT:80"
+    env_file: .env
+    volumes:
+      - .:/app
+    command: serve-dev

@@ -1,0 +1,5 @@
+{
+  "repo_name" : "myprojecttodockerize",
+  "development_server_port" : 10001,
+  "create_procfile_for_development" : "y"
+}
